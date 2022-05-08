@@ -1,12 +1,15 @@
 import React from 'react';
 import { Product, FooterBanner, HeroBanner} from '../components';
 import { client } from '../lib/client';
+// import HeroBanner from '../components/HeroBanner';
 
 
-const Home = () => {
+const Home = ({products, bannerData}) => {
   return (
     <>
-      <HeroBanner/>
+      <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
+      {console.log(products)}
+      {console.log(bannerData)}
 
       <div className='products-heading'>
         <h2>Best Selling Products</h2>
@@ -14,13 +17,28 @@ const Home = () => {
       </div>
 
       <div className='products-container'>
-        {['Product 1' , 'Product 2'].map(product => product)}
+        {products?.map(product => product.name)}
 
       </div>
 
       <FooterBanner/>
     </>
   )
+}
+
+// fetch data from the sanity api
+export const getServerSideProps = async () => {
+  // form sanity query for both product and banner
+  const query = '*[_type == "product"]';
+  const products = await client.fetch(query);
+
+  const bannerQuery = '*[_type == "banner"]';
+  const bannerData = await client.fetch(bannerQuery);
+
+  // what getServerSide props returns gets populated in the homapage fields
+  return {
+    props: {products, bannerData}
+  }
 }
 
 export default Home;
