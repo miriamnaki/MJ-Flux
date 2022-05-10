@@ -1,4 +1,4 @@
-// square brackets mean the product is gonna be dynamic
+// [square brackets] mean the product is gonna be dynamic
 
 import React, {useState} from 'react';
 import { client, urlFor } from '../../lib/client';
@@ -35,8 +35,7 @@ const ProductDetails = ({ product, products}) => {
                className={i === index ? 'small-image selected-image' : 'small-image'}
                onMouseEnter={() => setIndex(i)}
                />
-              
-              
+                         
             ))}
 
           </div>
