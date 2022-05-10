@@ -422,6 +422,10 @@ padding: 30px 65px;
  color: #324d67;
 
 }
+.image-container {
+  width:500px;
+  height: 500px;
+}
 
 .product-detail-image{
   border-radius: 15px;
