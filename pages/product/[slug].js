@@ -4,17 +4,21 @@ import React, {useState} from 'react';
 import { client, urlFor } from '../../lib/client';
 import {AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar} from 'react-icons/ai';
 import Product from '../../components/Product';
+import { useStateContext } from '../../context/StateContext';
+
 
 
 
 const ProductDetails = ({ product, products}) => {
-// console.log(product)
+  // console.log(product)
   const {image, name, details, price} = product;
-  console.log(image)
-  console.log(name)
-
-  // useState hook
+  
+  // useState hook for index
   const [index, setIndex] = useState(0);
+
+  // destructure useStateContext object properties
+  const {increaseQty, decreaseQty, qty} = useStateContext()
+
   return (
     <div>
       <div className='product-detail-container'>
@@ -64,9 +68,9 @@ const ProductDetails = ({ product, products}) => {
           <div className='quantity'>
             <h3>Quantity:</h3>
             <p className='quantity-desc'>
-              <span className='minus' onClick=""><AiOutlineMinus/></span>
-              <span className='num' onClick="">0</span>
-              <span className='plus' onClick=""><AiOutlinePlus/></span>
+              <span className='minus' onClick={decreaseQty}><AiOutlineMinus/></span>
+              <span className='num' onClick="">{qty}</span>
+              <span className='plus' onClick={increaseQty}><AiOutlinePlus/></span>
             </p>
           </div>
 
