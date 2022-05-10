@@ -20,6 +20,27 @@ const Cart = () => {
 
         </button>
 
+        {cartItems.length < 1 && (
+          <div className='empty-cart'>
+            <AiOutlineShopping size={150}/>
+            <h3>Your shopping bag is empty</h3>
+            <Link href='/'>
+            <button type='button'  className='btn' onClick={() => setShowCart(false)}>Continue Shopping</button>
+            </Link>
+
+          </div>
+        )}
+
+        <div className='product-container'>
+          {cartItems.length >= 1 && cartItems.map((item, i) => (
+             <div className='product' key={item._id}>
+               <img src={urlFor(item?.image[0])}      className='cart-product-image'/>
+
+             </div>
+          ))}
+
+        </div>
+
       </div>
 
     </div>
