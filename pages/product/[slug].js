@@ -17,7 +17,7 @@ const ProductDetails = ({ product, products}) => {
   const [index, setIndex] = useState(0);
 
   // destructure useStateContext object properties
-  const {increaseQty, decreaseQty, qty} = useStateContext()
+  const {increaseQty, decreaseQty, qty, addToCart} = useStateContext()
 
   return (
     <div>
