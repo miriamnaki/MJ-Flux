@@ -17,7 +17,13 @@ const ProductDetails = ({ product, products}) => {
   const [index, setIndex] = useState(0);
 
   // destructure useStateContext object properties
-  const {increaseQty, decreaseQty, qty, addToCart} = useStateContext()
+  const {increaseQty, decreaseQty, qty, addToCart,setShowCart} = useStateContext()
+
+  const handleBuyNow = () => {
+    addToCart(product,qty)
+    setShowCart(true)
+
+  }
 
   return (
     <div>
@@ -78,7 +84,7 @@ const ProductDetails = ({ product, products}) => {
           <div className='buttons'>
             <button type='button' className='add-to-cart' onClick={() => addToCart(product, qty)}>Add to Cart</button>
 
-            <button type='button' className='buy-now' onClick="">Buy Now</button>
+            <button type='button' className='buy-now' onClick={handleBuyNow}>Buy Now</button>
 
           </div>
 
