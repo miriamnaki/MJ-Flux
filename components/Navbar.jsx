@@ -3,6 +3,8 @@ import Link from 'next/link';
 import {AiOutlineShopping} from 'react-icons/ai';
 import {Cart} from './';
 import { useStateContext } from '../context/StateContext';
+import logo from '../assets/Logo.png';
+console.log('image',logo)
 
 const Navbar = () => {
 
@@ -11,7 +13,7 @@ const Navbar = () => {
     <div className='navbar-container'>
       <p>
         <Link href='/'>
-          Desert Moresso
+          <img src={logo.src} alt='logo'  className='navbar-logo'/>
         </Link>
       </p>
 
