@@ -747,8 +747,10 @@ margin-top: 160px;
 }
 
 .navbar-logo {
-  height: 100px;
-  padding: 0;
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  padding-bottom: 15px;
   margin: 0;
   /* width: 100px; */
 }
