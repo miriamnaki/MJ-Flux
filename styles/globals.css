@@ -305,7 +305,7 @@ flex-direction: column;
 }
 .footer-banner-container{
   padding: 100px 40px;
-  background-color: #f02d34;
+  background-color: #f5e5d5;
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -318,14 +318,24 @@ flex-direction: column;
   display: flex ;
   justify-content: space-between;
 }
+
+.banner-desc .left {
+  position: relative;
+  z-index: 2;
+  color:#3d2985; text-shadow:1px 1px 0 #b93854, 2px 2px 0 rgb(227, 152, 13), 3px 3px 0 rgb(128, 31, 97);
+  /* color: #231557; */
+}
 .banner-desc button{
-  border-radius: 15px;
+  /* border-radius: 15px; */
   padding: 10px 16px;
-  background-color: white;
-  color: red;
+  background-color: #3d2985;
+  text-shadow: none;
+  font-family: 'AbriFat';;
+  color: white;
   border: none;
   margin-top: 40px;
   font-size: 18px;
+  font-family: 'Zilla';
   font-weight: 500;
   cursor: pointer;
 }
@@ -335,17 +345,29 @@ flex-direction: column;
   margin-left: 25px;
 }
 .banner-desc .left p{
+  font-family: 'AbriFat';
   margin:18px;
+  color: #3d2985;
+  text-shadow: none;
+  
 }
 .footer-banner-image{
   position: absolute;
-  /* top: -35%;
-  left: 8%; */
-  top: -25%;
-  left: 25%;
+  width: 400px;
+  object-fit: cover;
+  height: 100%; 
+  top: 0;
+  left: 35%;
+  z-index: 0;
+  /* border: none; */
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 .banner-desc .right{
   line-height: 1.4;
+  position: relative;
+  z-index: 1;
+  color:#3d2985; text-shadow:1px 1px 0 #b93854, 2px 2px 0 rgb(227, 152, 13), 3px 3px 0 rgb(128, 31, 97);
+  
 }
 .banner-desc .right h3{
   font-weight: 800;
@@ -353,7 +375,12 @@ flex-direction: column;
 }
 .banner-desc .right p{
   font-size: 18px;
+  color: #3d2985;
+  text-shadow: none;
+  font-family: 'AbriFat';
 }
+
+
 .banner-desc .right .company-desc{
   font-size: 14px;
   font-weight: 300;
@@ -759,6 +786,7 @@ margin-top: 160px;
   }
   .banner-desc .right p{
     font-size: 18px;
+    
   }
   .banner-desc .right .company-desc{
     font-size: 14px;

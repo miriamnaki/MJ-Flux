@@ -1,6 +1,6 @@
 export default {
   name: 'footerBanner',
-  title: 'footerBanner',
+  title: 'FooterBanner',
   type: 'document',
   fields: [
     {

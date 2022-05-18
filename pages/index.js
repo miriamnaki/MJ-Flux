@@ -2,14 +2,16 @@ import React from 'react';
 import { Product, FooterBanner, HeroBanner} from '../components';
 import { client } from '../lib/client';
 // import HeroBanner from '../components/HeroBanner';
+// import FooterBanner from '../components/FooterBanner';
 
 
-const Home = ({products, bannerData}) => {
+const Home = ({products, bannerData, footerBannerData}) => {
   return (
     <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
       {console.log(products)}
       {console.log(bannerData)}
+      {console.log(footerBannerData)}
 
       <div className='products-heading'>
         <h2>Top Sellers</h2>
@@ -21,7 +23,7 @@ const Home = ({products, bannerData}) => {
 
       </div>
 
-      <FooterBanner footerBanner={bannerData && bannerData[0]}/>
+      <FooterBanner footerBanner={footerBannerData && footerBannerData[0]}/>
     </>
   )
 }
@@ -35,9 +37,12 @@ export const getServerSideProps = async () => {
   const bannerQuery = '*[_type == "banner"]';
   const bannerData = await client.fetch(bannerQuery);
 
-  // what getServerSide props returns gets populated in the homapage fields
+  const footerBannerQuery = '*[_type == "footerBanner"]';
+  const footerBannerData = await client.fetch(footerBannerQuery);
+
+  // what getServerSide props returns gets populated in the homepage fields
   return {
-    props: {products, bannerData}
+    props: {products, bannerData, footerBannerData}
   }
 }
 
