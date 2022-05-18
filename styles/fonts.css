@@ -1,0 +1,40 @@
+
+@font-face {
+    font-family:"AbriFat";
+    src:url("../assets/fonts/AbrilFatface-Regular.woff") format("woff"),
+    url("../assets/fonts/AbrilFatface-Regular.woff2") format("woff2");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+  font-family: 'DancingScript';
+  src:url("../assets/fonts/DancingScript-Regular.woff") format("woff"),
+  url("../assets/fonts/DancingScript-Regular.woff2") format("woff2");
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src:url("../assets/fonts/RobotoSlab-Regular.woff") format("woff"),
+  url("../assets/fonts/RobotoSlab-Regular.woff2") format("woff2");
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: 'Tapestry';
+  src:url("../assets/fonts/Tapestry-Regular.woff") format("woff"),
+  url("../assets/fonts/Tapestry-Regular.woff2") format("woff2");
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: 'Zilla';
+  src:url("../assets/fonts/ZillaSlab-Regular.woff") format("woff"),
+  url("../assets/fonts/ZillaSlab-Regular.woff2") format("woff2");
+  font-weight:normal;
+  font-style:normal;
+}

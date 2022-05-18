@@ -1,9 +1,9 @@
+@import url('./fonts.css');
 html,
 body, * {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:'Zilla';
   box-sizing: border-box;
   
 }
@@ -111,7 +111,6 @@ width: 100%;
  transition: transform 0.5s ease;
  color: #324d67;
  width: 300px;
- /* word-break: break-word; */
  
 }
 .product-card:hover{
@@ -124,7 +123,6 @@ width: 100%;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
   object-fit: cover;
-  /* word-break: break-all; */
 }
 
 .product-name{ 
@@ -141,25 +139,52 @@ width: 100%;
 }
 
 .hero-banner-container{
-  padding: 100px 40px;
+  padding: 20px 30px 20px 30px;
   background-color: rgb(246, 246, 235);
-  /* border-radius: 15px; */
   position: relative;
   height: 500px;
   line-height: 0.9; 
   width: 100%;
 
 }
-/* .hero-banner-innner{
-  position: absolute;
-  z-index: 1;
+.hero-banner-innner{
+  position: relative;
+  width: 100%;
+}
 
-} */
-.hero-banner-container .beats-solo{
-  font-size: 20px;
+.hero-banner-container  .beats-solo{
+  font-family: 'AbriFat';
+  padding: 10px 40px 80px 400px;
+  font-size: 30px;
   position: relative;
   z-index: 1;
-}
+  -webkit-text-stroke-width: 1.25px;
+  -webkit-text-stroke-color: #000;
+  
+  text-shadow: 0 0px #f3c623, 0 0px #f2aaaa;
+  transform: translate(0, 100%) rotate(360deg);
+  animation: jump 10s ease-in-out infinite;
+  animation-delay: 3s;
+  display: inline-block;
+    
+     
+
+    
+    
+  }
+
+  
+  @keyframes jump {
+    50% {
+      transform: translate(0, 0) rotate(360deg);
+      text-shadow: 0 0px #8fc0a9, 0 0px #84a9ac;
+    }
+    20% {
+      text-shadow: 0 -60px #d54062, 0 -150px #8fc0a9;
+    }
+  }
+
+
 .hero-banner-container button{
   border-radius: 15px;
   padding: 10px 16px;
@@ -186,6 +211,7 @@ width: 100%;
 }
 .hero-banner-container h1{
    font-size: 9em;
+   
   margin-left: -20px;
   /* text-transform: uppercase; */
   position: relative;
@@ -204,7 +230,7 @@ width: 100%;
   background-size: 200% auto;
   /* color: #fff; */
   background-clip: text;
-  text-fill-color: transparent;
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -244,9 +270,11 @@ flex-direction: column;
 
 }
 .desc p{
+  font-family: 'Tapestry';
   color: #5f5f5f;
   font-weight: 100;
-text-align: end;
+  text-align: end;
+  font-size: 18px;
 }
 .desc h5{
   margin-bottom: 12px;
@@ -262,12 +290,15 @@ text-align: end;
 
 }
 .products-heading h2{
+  font-family: 'AbriFat';
   font-size: 40px;
   font-weight: 800;
 }
 .products-heading p{
-  font-size: 16px;
+  font-family: 'Tapestry';
+  font-size: 18px;
   font-weight: 200;
+  padding-top: 10px;
 }
 .footer-banner-container{
   padding: 100px 40px;
