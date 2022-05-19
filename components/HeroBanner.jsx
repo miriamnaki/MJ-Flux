@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { runSchoolPride } from '../lib/utils2';
 
 const HeroBanner = ({heroBanner}) => {
+  console.log(heroBanner)
 
   useEffect(() => {
     runSchoolPride()
@@ -21,7 +22,8 @@ const HeroBanner = ({heroBanner}) => {
         <img src={urlFor(heroBanner.image)} alt='landing-image' className='hero-banner-image'/>
 
         <div>
-          <Link href={`/product/${heroBanner.product}`}> 
+          {/* <Link href={`/product/${heroBanner.product}`}>  */}
+          <Link href={`#product-section`}> 
           <button>{heroBanner.buttonText}</button>
           </Link>
 

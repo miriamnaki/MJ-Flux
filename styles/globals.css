@@ -32,7 +32,7 @@ width: 100%;
 .navbar-container{
   display: flex;
   justify-content: space-between;
-  margin: 6px 7px;
+  margin: 6px 35px;
   position: relative;
 }
 .marquee-text{
@@ -73,13 +73,14 @@ width: 100%;
 
 }
 .cart-icon{
-  font-size: 25px;
+  font-size: 30px;
   color: gray;
   cursor: pointer;
   position: relative;
   transition: transform .4s ease;
   border: none;
   background-color: transparent;
+  /* padding-right: 20px; */
 }
 .cart-icon:hover{
   transform: scale(1.1,1.1);
@@ -519,13 +520,13 @@ padding: 30px 65px;
   width: 100%;
   max-width: 400px;
   padding: 10px 12px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   border: none;
   font-size: 20px;
   margin-top: 10px;
   margin-top: 40px;
   text-transform: uppercase;
-  background-color: #f02d34;
+  background-color: black;
   color: #fff;
   cursor: pointer;
     transform: scale(1, 1);
