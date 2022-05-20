@@ -1045,10 +1045,10 @@ padding: 20px 10px;
   font-size: 25px;
 }
 .products-heading p{
-  font-size: 13px;
+  font-size: 14px;
 }
 .product-image {
-  height: 200px;
+  height: 250px;
   
 }
 .footer-banner-container{
@@ -1068,7 +1068,7 @@ padding: 20px 10px;
 .banner-desc   button{
   position: absolute;
   bottom:20px;
-  left: 10%;;
+  left: 15px;;
   font-size: 13px;
   padding: 10px 20px;
   z-index: 1;
@@ -1172,10 +1172,10 @@ padding: 20px 10px;
   width:300px;
 }
 .product-image{
-  width:300px;
+  width:250px;
 }
 .product-name {
-  width: 150px;
+  width: 250px;
   font-size: 13px;
 }
 .product-price {
