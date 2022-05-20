@@ -1497,7 +1497,7 @@ padding: 20px 10px;
 
 
 /* ******** Desktop stylings ********** */
-@media screen and (min-width:1280px)and (max-width:1605px) {
+@media screen and (min-width:1280px) {
   /*** landing page ***/
 .navbar-logo {
   height: 250px;
@@ -1620,7 +1620,7 @@ padding: 20px 10px;
 }
 .layout {
   padding: 0px;
-  width: 1150px;
+  width: 1450px;
   margin: 0px auto;
 }
 
