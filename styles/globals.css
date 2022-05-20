@@ -1357,15 +1357,15 @@ padding: 20px 10px;
 .product-detail-container{
   display:flex;
   margin: 10px;
-  flex-direction: column;
+  
 }
 .image-container{
   width:100%;
-  height:30vh;
+  height:35vh;
 }
 .product-detail-image {
-  width: 100%;
-  height: 30vh;
+  /* width: 90%; */
+  height: 35vh;
   object-fit: cover;
 
 }
@@ -1378,14 +1378,15 @@ padding: 20px 10px;
   height: 70px;
 }
 .product-detail-desc h1 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 .product-detail-desc p {
-  font-size: 13px;
+  font-size: 16px;
+  /* width:400px; */
 }
 .product-detail-desc .price{
-  font-size: 16px;
+  font-size: 17px;
 }
 .product-detail-desc .quantity h3{
   font-size: 16px;
@@ -1394,6 +1395,7 @@ padding: 20px 10px;
 }
 .quantity-desc {
   padding:6px;
+  
 }
 .quantity-desc span {
   font-size:13px;
@@ -1402,13 +1404,13 @@ padding: 20px 10px;
   font-size: 16px;
 }
 .buttons .add-to-cart {
-  font-size: 13px;
+  font-size: 14px;
   padding: 10px 10px;
   width: 150px;
 }
 .buttons .buy-now {
   width: 150px;
-  font-size: 13px;
+  font-size: 14px;
   padding: 5px 10px;
 }
 .maylike-products-wrapper {
@@ -1416,7 +1418,7 @@ padding: 20px 10px;
 }
 .maylike-products-wrapper h2{
   margin:20px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .product-card{
   width:300px;
