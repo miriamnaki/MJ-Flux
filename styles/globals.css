@@ -5,10 +5,12 @@ body, * {
   margin: 0;
   font-family:'Zilla';
   box-sizing: border-box;
+  /* width: 100%; */
   
 }
 html {
-  background-color: #fbfcf7
+  background-color: #fbfcf7;
+  box-sizing: border-box;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -23,10 +25,11 @@ a {
 max-width: 1400px; 
 margin: auto;
 width: 100%;
-
+box-sizing:border-box;
 }
 .layout{
   padding: 10px;
+  /* width: 100%; */
 }
 
 .navbar-container{
@@ -694,8 +697,8 @@ padding: 30px 65px;
 }
 .success, .cancel{
   width: 1000px;
-margin: auto;
-margin-top: 160px;
+  margin: auto;
+  margin-top: 160px;
   background-color: #dcdcdc;
   padding: 50px;
   border-radius: 15px;
@@ -749,12 +752,19 @@ margin-top: 160px;
   /* width: 100px; */
 }
 
-/***** mobile styles ********/
+
+
+/*********** mobile styles **************/
 @media screen and (min-width:320px)and (max-width:480px) {
+  /*** landing page ***/
 .navbar-logo {
   height: 100px;
   width: 100px;
 }
+.navbar-container {
+  margin:10px;
+}
+
 
 .hero-banner-container {
   padding:0px;
@@ -841,8 +851,6 @@ margin-top: 160px;
 }
 .banner-desc .right p{
   font-size: 16px;
-  
-
 }
 .banner-desc .right h3 {
   padding-top: 20px;
@@ -851,8 +859,93 @@ margin-top: 160px;
 .footer-container {
   font-size: 13px;
 }
+
+/* ***product details page ******** */
+
+.product-detail-container{
+  display:flex;
+  margin: 10px;
+  flex-direction: column;
+}
+.image-container{
+  width:100%;
+  height:18vh;
+}
+.product-detail-image {
+  width: 100%;
+  height: 18vh;
+  object-fit: cover;
+
+}
+.small-images-container{
+  width:100%;
+  flex-wrap: wrap;
+}
+.small-image {
+  width: 70px;
+  height: 70px;
+}
+.product-detail-desc h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.product-detail-desc p {
+  font-size: 13px;
+}
+.product-detail-desc .price{
+  font-size: 16px;
+}
+.product-detail-desc .quantity h3{
+  font-size: 16px;
+  align-self: center;
+
+}
+.quantity-desc {
+  padding:6px;
+}
+.quantity-desc span {
+  font-size:13px;
+}
+.quantity-desc .num{
+  font-size: 16px;
+}
+.buttons .add-to-cart {
+  font-size: 13px;
+  padding: 10px 10px;
+  width: 150px;
+}
+.buttons .buy-now {
+  width: 150px;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+.maylike-products-wrapper {
+  margin-top: 40px;
+}
+.maylike-products-wrapper h2{
+  margin:20px;
+  font-size: 20px;
+}
+.product-card{
+  width:300px;
+}
+.product-image{
+  width:300px;
+}
+.product-name {
+  width: 150px;
+  font-size: 13px;
+}
+.product-price {
+  font-size: 13px;
+}
+
   
 }
+
+/* *********** mobile ends here *************/
+
+
 
 
 
